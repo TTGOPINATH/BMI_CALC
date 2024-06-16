@@ -48,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     Result.setText("Normal👍👍"+result);
                 }
+                if (h>=250){
+                    Toast.makeText(MainActivity.this, "Invalid input", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
